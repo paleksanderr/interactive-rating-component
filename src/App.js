@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="App">
       <FormCard />
-      <ThankYouCard />
+      {/* <ThankYouCard /> */}
     </div>
   );
 }

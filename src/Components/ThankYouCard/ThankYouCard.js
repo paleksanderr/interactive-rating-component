@@ -1,4 +1,5 @@
 import React from "react";
+import styles from '../ThankYouCard/thankyoucard.module.css'
 
 export default function ThankYouCard() {
   return (
@@ -101,7 +102,7 @@ export default function ThankYouCard() {
         </div>
         <div className="thankyou-content-container">
           <h5 className="thankyou-content">
-            {" "}
+           
             We appreciate you taking the time to give a rating. If you ever need
             more support, don’t hesitate to get in touch!
           </h5>
