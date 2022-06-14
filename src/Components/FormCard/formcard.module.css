@@ -3,19 +3,74 @@ html {
   padding: 15px;
 }
 
-.formCard{
+.formCard {
   display: grid;
+
   border-radius: 1rem;
-  height: 18rem;
-  width: 18rem;
+  height: 22rem;
+  width: 22rem;
   background-color: var(--very-dark-blue);
 }
-.starBtn{
-  margin: 10px 10px;
+.starBtn {
+  margin: 15px 15px;
   padding: 15px;
   border-radius: 100%;
   cursor: pointer;
   background-color: var(--dark-blue);
   color: var(--orange);
   border: none;
+}
+
+.headerTitle {
+  font-weight: var(--font-weight-700);
+  color: var(--white);
+  margin: 15px 15px;
+}
+.headerContent {
+  font-weight: var(--font-weight-400);
+  font-size: 15px;
+  color: var(--grayish-blue);
+  margin: 15px 15px;
+}
+.buttonsContainer {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+.buttons {
+  margin: 10px 11px;
+  padding: 14px 18px;
+  border-radius: 100%;
+  cursor: pointer;
+  background-color: var(--dark-blue);
+  color: var(--white);
+  font-weight: 700;
+  border: none;
+}
+
+.buttons:hover {
+  background-color: var(--orange);
+  color: var(--dark-blue);
+}
+
+.submitContainer {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+.buttonSubmit {
+  margin: 10px 11px;
+  padding: 12px 130px;
+  border-radius: 3rem;
+  cursor: pointer;
+  background-color: var(--orange);
+  color: var(--white);
+  font-weight: 700;
+  border: none;
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+.buttonSubmit:hover {
+  background-color: var(--white);
+  color: var(--orange);
 }

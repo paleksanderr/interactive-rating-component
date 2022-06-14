@@ -1,0 +1,20 @@
+.thankYouContainer{
+  display: grid;
+  border-radius: 1rem;
+  height: 22rem;
+  width: 22rem;
+  background-color: var(--very-dark-blue);
+}
+
+.mainImg{
+  margin: 35px 85px;
+  border: none;
+  
+}
+.result{
+  font-size: 15px;
+  padding: 5px 10px;
+  color: var(--orange);
+  background-color:hsl(213, 19%, 18%) ;
+   border-radius: 3rem;
+}

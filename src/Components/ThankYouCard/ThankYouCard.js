@@ -3,8 +3,8 @@ import styles from '../ThankYouCard/thankyoucard.module.css'
 
 export default function ThankYouCard() {
   return (
-    <div className="form-card-thankyou-container">
-      <div className="main-img-container">
+    <div className={styles.thankYouContainer}>
+      <div className={styles.mainImg}>
         <svg width="162" height="108" xmlns="http://www.w3.org/2000/svg">
           <g fill="none">
             <path
@@ -95,7 +95,7 @@ export default function ThankYouCard() {
           </g>
         </svg>
         <div className="result-container">
-          <h5 className="result">You selected Add rating here out of 5</h5>
+          <h5 className={styles.result}>You selected 4 out of 5</h5>
         </div>
         <div className="thankyou-container">
           <h2 className="thankyou">Thank you!</h2>

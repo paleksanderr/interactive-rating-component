@@ -18,23 +18,23 @@ export default function FormCard () {
           </button>
         </div>
         <div className="header-title-container">
-          <h2 className="header-title">How did we do?</h2>
+          <h2 className={styles.headerTitle}>How did we do?</h2>
         </div>
         <div className="header-content-container">
-          <p className="header-content">
+          <p className={styles.headerContent}>
             Please let us know how we did with your support request. All
             feedback is appreciated to help us improve our offering!
           </p>
         </div>
-        <div className="buttons-container">
-          <button className="btn-one-five">1</button>
-          <button className="btn-one-five">2</button>
-          <button className="btn-one-five">3</button>
-          <button className="btn-one-five">4</button>
-          <button className="btn-one-five">5</button>
+        <div className={styles.buttonsContainer}>
+          <button className={styles.buttons}>1</button>
+          <button className={styles.buttons}>2</button>
+          <button className={styles.buttons}>3</button>
+          <button className={styles.buttons}>4</button>
+          <button className={styles.buttons}>5</button>
         </div>
-        <div className="button-submit-container">
-          <button className="button-submit">Submit</button>
+        <div className={styles.submitContainer}>
+          <button className={styles.buttonSubmit}>Submit</button>
         </div>
       </div>
     </div>
