@@ -1,9 +1,17 @@
 import React from 'react';
 import styles from '../FormCard/formcard.module.css'
+import { useState } from 'react';
 
 
 
 export default function FormCard () {
+  const [] = useState();
+  const rating = () => {
+    console.log('rating')
+  }
+  const submit = () => {
+    console.log('submit')
+  }
   return (
     <div className={styles.formCard}>
       <div className={styles.formCardHeader}>
@@ -26,7 +34,7 @@ export default function FormCard () {
             feedback is appreciated to help us improve our offering!
           </p>
         </div>
-        <div className={styles.buttonsContainer}>
+        <div onClick={rating} className={styles.buttonsContainer}>
           <button className={styles.buttons}>1</button>
           <button className={styles.buttons}>2</button>
           <button className={styles.buttons}>3</button>
@@ -34,7 +42,9 @@ export default function FormCard () {
           <button className={styles.buttons}>5</button>
         </div>
         <div className={styles.submitContainer}>
-          <button className={styles.buttonSubmit}>Submit</button>
+          <button onClick={submit} className={styles.buttonSubmit}>
+            Submit
+          </button>
         </div>
       </div>
     </div>
