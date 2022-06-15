@@ -1,5 +1,6 @@
 import React from "react";
 import styles from '../ThankYouCard/thankyoucard.module.css'
+import { Button } from "reactstrap"
 
 export default function ThankYouCard() {
   return (
@@ -98,10 +99,10 @@ export default function ThankYouCard() {
           <h5 className={styles.result}>You selected 4 out of 5</h5>
         </div>
         <div className="thankyou-container">
-          <h2 className="thankyou">Thank you!</h2>
+          <h2 className={styles.thankYou}>Thank you!</h2>
         </div>
         <div className="thankyou-content-container">
-          <h5 className="thankyou-content">
+          <h5 className={styles.thankYouContent}>
            
             We appreciate you taking the time to give a rating. If you ever need
             more support, don’t hesitate to get in touch!

@@ -6,9 +6,25 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      {/* <FormCard /> */}
+    <div style={{
+      
+    }} className="App">
+      <header style={{
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+      }}>
+      
+      <FormCard />
+      </header>
+      <header style={{
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+      }}>
+
       <ThankYouCard />
+      </header>
     </div>
   );
 }
