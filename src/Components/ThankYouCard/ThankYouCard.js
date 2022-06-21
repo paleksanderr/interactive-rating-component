@@ -1,8 +1,11 @@
 import React from "react";
 import styles from '../ThankYouCard/thankyoucard.module.css'
-import { Button } from "reactstrap"
 
-export default function ThankYouCard() {
+
+export default function ThankYouCard(props) {
+  const rating = () => {
+    props.onRate();
+  };
   return (
     <div className={styles.thankYouContainer}>
       <div className={styles.mainImg}>
@@ -96,14 +99,13 @@ export default function ThankYouCard() {
           </g>
         </svg>
         <div className="result-container">
-          <h5 className={styles.result}>You selected 4 out of 5</h5>
+          <h5 className={styles.result}>You choose sccore...{rating}</h5>
         </div>
         <div className="thankyou-container">
           <h2 className={styles.thankYou}>Thank you!</h2>
         </div>
         <div className="thankyou-content-container">
           <h5 className={styles.thankYouContent}>
-           
             We appreciate you taking the time to give a rating. If you ever need
             more support, don’t hesitate to get in touch!
           </h5>

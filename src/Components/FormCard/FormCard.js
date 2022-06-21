@@ -4,14 +4,19 @@ import { useState } from 'react';
 
 
 
-export default function FormCard () {
-  const [] = useState();
+export default function FormCard (props) {
+  const [rate, setRate] = useState();
   const rating = () => {
-    console.log('rating')
+    props.onRate(rate);
   }
   const submit = () => {
-    console.log('submit')
+    console.log(rate)
   }
+  const rateHandler = (e) => {
+    setRate(e.target.id);
+
+  }
+  
   return (
     <div className={styles.formCard}>
       <div className={styles.formCardHeader}>
@@ -35,11 +40,46 @@ export default function FormCard () {
           </p>
         </div>
         <div onClick={rating} className={styles.buttonsContainer}>
-          <button className={styles.buttons}>1</button>
-          <button className={styles.buttons}>2</button>
-          <button className={styles.buttons}>3</button>
-          <button className={styles.buttons}>4</button>
-          <button className={styles.buttons}>5</button>
+          <button
+            value={rate}
+            id="1"
+            onClick={rateHandler}
+            className={`${styles.buttons} `}
+          >
+            1
+          </button>
+          <button
+            value={rate}
+            id="2"
+            onClick={rateHandler}
+            className={`${styles.buttons} `}
+          >
+            2
+          </button>
+          <button
+            value={rate}
+            id="3"
+            onClick={rateHandler}
+            className={`${styles.buttons} `}
+          >
+            3
+          </button>
+          <button
+            value={rate}
+            id="4"
+            onClick={rateHandler}
+            className={`${styles.buttons} `}
+          >
+            4
+          </button>
+          <button
+            value={rate}
+            id="5"
+            onClick={rateHandler}
+            className={`${styles.buttons} `}
+          >
+            5
+          </button>
         </div>
         <div className={styles.submitContainer}>
           <button onClick={submit} className={styles.buttonSubmit}>
