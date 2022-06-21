@@ -1,21 +1,28 @@
 import React from 'react';
 import styles from '../FormCard/formcard.module.css'
 import { useState } from 'react';
-
+import ThankYouCard from '../ThankYouCard/ThankYouCard';
 
 
 export default function FormCard (props) {
   const [rate, setRate] = useState();
+  const [isShow, setIsShow] = useState(false);
+  
   const rating = () => {
     props.onRate(rate);
   }
   const submit = () => {
     console.log(rate)
+    setIsShow(!isShow);
   }
   const rateHandler = (e) => {
     setRate(e.target.id);
 
   }
+  
+
+
+
   
   return (
     <div className={styles.formCard}>
@@ -82,11 +89,27 @@ export default function FormCard (props) {
           </button>
         </div>
         <div className={styles.submitContainer}>
-          <button onClick={submit} className={styles.buttonSubmit}>
+          <button  onClick={submit}  className={styles.buttonSubmit} 
+          
+          >
             Submit
           </button>
         </div>
       </div>
+      <div> {isShow ? 
+
+      <div
+      style={{
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        marginTop: "20px",
+      }}
+      >
+      <ThankYouCard onRate={rate}  />
+    </div> 
+    : null} </div>
+        
     </div>
   );
 }

@@ -3,9 +3,8 @@ import styles from '../ThankYouCard/thankyoucard.module.css'
 
 
 export default function ThankYouCard(props) {
-  const rating = () => {
-    props.onRate();
-  };
+  
+  const rate = props.onRate;
   return (
     <div className={styles.thankYouContainer}>
       <div className={styles.mainImg}>
@@ -99,7 +98,7 @@ export default function ThankYouCard(props) {
           </g>
         </svg>
         <div className="result-container">
-          <h5 className={styles.result}>You choose sccore...{rating}</h5>
+          <h5 className={styles.result}>{`You selected ${rate} out of 5`}</h5>
         </div>
         <div className="thankyou-container">
           <h2 className={styles.thankYou}>Thank you!</h2>

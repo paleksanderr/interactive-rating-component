@@ -6,14 +6,13 @@ import './App.css';
 
 
 class App extends Component {
+
 state = {
-      rate: 0,
-    };
+  rating: 0,
+}
 
     ratingHandler = (rate) => {
       console.log("rate z app", rate)
-      const ocena = this.state.rate;
-      this.setState({ ocena })
     }
   
   render(){
@@ -28,15 +27,9 @@ state = {
       >
         <FormCard onRate={(rate) => this.ratingHandler(rate)} />
       </header>
-      <header
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-        }}
-      >
-        <ThankYouCard onRate={(rate) => this.ratingHandler(rate)} />
-      </header>
+        
+
+     
     </div>
   );
 }
